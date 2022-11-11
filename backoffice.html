@@ -14,7 +14,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">CWJ</a>
+      <a class="navbar-brand" href="index.html">CWJ</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="index.html"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
@@ -45,6 +45,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6 mt-5">
           <h1>Products</h1>
+
           <form onsubmit="onFormSubmit(event)" id="product-form">
             <div class="form-group">
               <label for="product-name">Product Name</label>
@@ -150,8 +151,8 @@
             // Because we want to do this only if the response code is 200 OK
             alert(
               productId
-                ? "Product edited successfully!"
-                : "Product created successfully!"
+                ? "Product is edited successfully!"
+                : "Product is created successfully!"
             )
           } else {
             throw new Error("ERROR WHILE EXECUTING THE TRY BLOCK!")
